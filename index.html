@@ -1,15 +1,5 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="color-scheme" content="light dark">
-<link rel="icon" href="data:,">
-<title>Prop Board — Wednesday, October 21, 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light dark"><link rel="icon" href="data:,"><title>Prop Board — Thursday, October 22, 2026</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
 :root{
   --bg:#f4f4f0; --surface:#ffffff; --surface2:#eeeee8; --text:#101312; --muted:#6b7370; --border:#dddcd6;
   --accent:#0a5c36; --accent-bg:#e2f0e7; --accent-text:#0a5c36;
@@ -37,12 +27,10 @@ h1{font-family:"Archivo",sans-serif;font-weight:900;letter-spacing:-.03em;line-h
 .meta-box b{font-family:"Archivo";font-size:13px}
 .meta-box span{display:block;font-size:12px;color:var(--muted);line-height:1.5;margin-top:3px}
 .meta-box .mono{font-family:"IBM Plex Mono";font-size:12px;color:var(--text)}
-/* Date banner */
 .date-banner{background:#111;color:#fff;border-radius:16px;padding:16px 18px;display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;margin:2px 0 16px}
 @media(prefers-color-scheme:dark){.date-banner{background:#eef1ef;color:#111}}
 .date-banner .d{font-family:"Archivo";font-weight:900;font-size:24px;letter-spacing:-.02em;line-height:1.05}
 .date-banner .s{font-size:12.5px;opacity:.8;line-height:1.5;max-width:420px}
-/* Tabs */
 .tabs{position:sticky;top:0;z-index:20;background:var(--bg);padding:4px 0 12px;margin:0 0 14px;border-bottom:1px solid var(--border)}
 .tabs-inner{display:flex;flex-wrap:wrap;gap:8px}
 .tab-btn{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--text);padding:10px 16px;border-radius:999px;font-weight:700;font-size:13.5px;cursor:pointer;display:flex;align-items:center;gap:7px}
@@ -51,18 +39,15 @@ h1{font-family:"Archivo",sans-serif;font-weight:900;letter-spacing:-.03em;line-h
 .tab-btn.active small{background:rgba(255,255,255,.18);color:inherit}
 @media(prefers-color-scheme:dark){.tab-btn.active{background:#eef1ef;color:#0e1110}}
 .tab-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-/* Bottom tab bar */
 .bottom-tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--border);padding:8px 10px calc(8px + env(safe-area-inset-bottom));display:flex;gap:6px;justify-content:center}
 .bottom-tabs .tab-btn{flex:1;max-width:230px;justify-content:center;font-size:12.5px;padding:9px 6px}
 .panel{display:none;padding-top:18px}
 .panel.active{display:block}
-/* Stats strip */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
 @media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
 .stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px}
 .stat strong{font-family:"Archivo";font-size:26px;line-height:1;display:block}
 .stat span{font-size:12px;color:var(--muted);line-height:1.4;display:block;margin-top:5px}
-/* Cards */
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:760px){.grid{grid-template-columns:1fr}}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:18px}
@@ -88,7 +73,6 @@ h1{font-family:"Archivo",sans-serif;font-weight:900;letter-spacing:-.03em;line-h
 .bar{height:7px;background:var(--surface2);border-radius:999px;overflow:hidden;margin:10px 0 4px}
 .bar i{display:block;height:100%;background:var(--accent);border-radius:999px}
 .bar-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);font-family:"IBM Plex Mono"}
-/* List rows */
 .row{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px 16px;display:flex;gap:14px;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap}
 .row-left{display:flex;gap:12px;align-items:center;min-width:0}
 .avatar{width:42px;height:42px;border-radius:11px;background:var(--text);color:var(--bg);display:grid;place-items:center;font-family:"Archivo";font-weight:900;font-size:13px;flex-shrink:0}
@@ -109,198 +93,51 @@ h1{font-family:"Archivo",sans-serif;font-weight:900;letter-spacing:-.03em;line-h
 .callout{display:flex;gap:12px;background:#111;color:#fff;border-radius:16px;padding:16px;align-items:flex-start}
 @media(prefers-color-scheme:dark){.callout{background:#eef1ef;color:#111}}
 .callout strong{font-family:"Archivo"}
-</style>
-</head>
-<body>
-<div class="wrap">
-  <!-- TABS — pinned to the top so games & props are one tap away -->
-  <nav class="tabs" aria-label="Prop board tabs">
-    <div class="tabs-inner" role="tablist">
-      <button class="tab-btn active" data-tab="top" role="tab">⭐ Top Picks <small>4</small></button>
-      <button class="tab-btn" data-tab="agree" role="tab">✓ Both Agree <small>4</small></button>
-      <button class="tab-btn" data-tab="all" role="tab">🎯 Prop Plays <small>0</small></button>
-      <button class="tab-btn" data-tab="props" role="tab">Player Props <small>3</small></button>
-      <button class="tab-btn" data-tab="traps" role="tab">⚠ Traps &amp; Fades <small>12</small></button>
-    </div>
-  </nav>
-
-  <div class="date-banner">
-    <div class="d">Wednesday, October 21, 2026</div>
-    <div class="s">Today's board — from the card built ~1:00 AM ET. Lines are pre-game snapshots from the card and move; recheck before anything matters.</div>
-  </div>
-
-  <div class="top">
-    <div>
-      <div class="eyebrow">Wednesday • Oct 21, 2026 — Today's Card</div>
-      <h1>Four officials.<br>All B+, all plus money.</h1>
-      <p class="sub">The day's 4 official plays — flat 1 unit, positive EV — led by two NBA moneylines where our 10,000-run sim and numberFire both make the underdog the favorite against the market price, plus two Champions League moneylines. No official player props today: no prop carried a verified average + opponent split + price.</p>
-    </div>
-    <div class="meta-box">
-      <b>How to read this board</b>
-      <span><span class="mono">OFFICIAL</span> = B+ or better with positive EV at flat 1 unit</span>
-      <span><span class="mono">WATCH</span> = graded lean that failed a check — price, data quality, or a model collision — and stays off the official card</span>
-      <span><span class="mono">SIM</span> = 10,000-run simulation; EV is vs. the line's break-even</span>
-      <span style="margin-top:8px"><b style="font-size:12px">Sources:</b> 10k sim • numberFire • RotoWire • WSB • WagerTalk • FanDuel / BetRivers / DraftKings / Hard Rock snapshots</span>
-    </div>
-  </div>
-
-  <!-- TOP PICKS -->
-  <section class="panel active" id="panel-top">
-    <div class="stats">
-      <div class="stat"><strong>4</strong><span>Official plays today — all B+, flat 1 unit, positive EV</span></div>
-      <div class="stat"><strong>+57.7%</strong><span>Best EV on the board — Hornets ML sim edge</span></div>
-      <div class="stat"><strong>2</strong><span>Sports with officials — NBA (2) and UCL soccer (2)</span></div>
-      <div class="stat"><strong>0</strong><span>Official player props — none verified today</span></div>
-    </div>
-
-    <div class="callout" style="margin-bottom:12px">
-      <div style="font-size:22px">🏀</div>
-      <div><strong>Lead play: Charlotte Hornets ML +122 at Brooklyn.</strong><div style="font-size:13.5px;opacity:.85;line-height:1.5;margin-top:3px">Sim win 71.0% and numberFire 76.48% — two independent models make Charlotte the favorite, yet the market prices Brooklyn -144. The day's lead NBA play backed by two models against the price (the Pelicans are the second NBA official).</div></div>
-    </div>
-
-    <div class="grid">
-      <!-- Hornets -->
-      <article class="card">
-        <div class="card-top"><div><div class="name">Charlotte Hornets ML</div><div class="team">NBA • @ Brooklyn Nets • 7:30 PM ET</div></div><span class="grade b">B+</span></div>
-        <div class="prop-line"><span class="market">Hornets ML</span><span class="odds">+122 FANDUEL (~OCT 20 EVE)</span></div>
-        <div class="numbers"><div class="num"><label>Sim avg</label><b>CHA 117.0 – BKN 107.7</b></div><div class="num"><label>Sim win</label><b>71.0%</b></div><div class="num"><label>Break-even</label><b>45.0%</b></div><div class="num"><label>EV</label><b>+57.7%</b></div></div>
-        <p class="why">numberFire (current rosters) independently makes CHA its projected favorite at <strong>76.48%</strong> — yet the market prices BKN -144 / CHA +122. ML vs. spread: CHA +2.5 -103 (BetRivers) sim cover 75.0% → EV +47.8% &lt; ML +57.7% → <strong>ML is the better expression</strong>. SRS: CHA +4.48 vs BKN -9.70 (prior-season, SOS baked in).</p>
-        <div class="sources"><span>✓ 10k sim</span><span>✓ numberFire 76.48%</span><span>Prior-season based • thin sample (n=0)</span></div>
-      </article>
-
-      <!-- Pelicans -->
-      <article class="card">
-        <div class="card-top"><div><div class="name">New Orleans Pelicans ML</div><div class="team">NBA • vs Indiana Pacers • 8:00 PM ET</div></div><span class="grade b">B+</span></div>
-        <div class="prop-line"><span class="market">Pelicans ML</span><span class="odds">+134 FANDUEL (~OCT 20 EVE)</span></div>
-        <div class="numbers"><div class="num"><label>Sim avg</label><b>IND 115.5 – NOP 118.6</b></div><div class="num"><label>Sim win</label><b>57.4%</b></div><div class="num"><label>Break-even</label><b>42.7%</b></div><div class="num"><label>EV</label><b>+34.3%</b></div></div>
-        <p class="why">numberFire independently makes NOP its projected favorite at <strong>67.16%</strong> — yet the market prices IND -158 / NOP +134 (Pacers -3.5). ML vs. spread: NOP +3.5 -109 (BetRivers) sim cover 64.0% → EV +22.7% &lt; ML +34.3% → <strong>ML</strong>.</p>
-        <div class="sources"><span>✓ 10k sim</span><span>✓ numberFire 67.16%</span><span>Prior-season based • thin sample (n=0)</span></div>
-      </article>
-
-      <!-- Como -->
-      <article class="card">
-        <div class="card-top"><div><div class="name">Como ML</div><div class="team">Soccer • UCL • vs Manchester United • 12:45 PM ET</div></div><span class="grade b">B+</span></div>
-        <div class="prop-line"><span class="market">Como ML</span><span class="odds">+124 ROTOWIRE • +130 DRAFTKINGS — SHOP THE +130</span></div>
-        <div class="numbers"><div class="num"><label>Sim avg</label><b>Man Utd 1.75 – Como 2.42</b></div><div class="num"><label>Sim win</label><b>52.8%</b></div><div class="num"><label>Break-even</label><b>44.6%</b></div><div class="num"><label>EV</label><b>+18.2%</b></div></div>
-        <p class="why"><strong>Input flag:</strong> sim inputs are Matchday-2 scores only, shrunk with a 6-game prior — input-sensitive, capped at B+. RotoWire's Wednesday best bet is the same play (see Both Agree).</p>
-        <div class="sources"><span>✓ 10k sim</span><span>✓ RotoWire best bet</span><span>MD2-only inputs</span></div>
-      </article>
-
-      <!-- Arsenal -->
-      <article class="card">
-        <div class="card-top"><div><div class="name">Arsenal ML</div><div class="team">Soccer • UCL • @ Bayern Munich • 3:00 PM ET</div></div><span class="grade b">B+</span></div>
-        <div class="prop-line"><span class="market">Arsenal ML</span><span class="odds">+240 SBN/BFW • +220 HARD ROCK — SHOP THE +240</span></div>
-        <div class="numbers"><div class="num"><label>Sim avg</label><b>Arsenal 2.16 – Bayern 2.25</b></div><div class="num"><label>Sim win</label><b>38.7%</b></div><div class="num"><label>Break-even</label><b>29.4%</b></div><div class="num"><label>EV</label><b>+31.4%</b></div></div>
-        <p class="why"><strong>Input flag:</strong> MD2-only sim inputs — input-sensitive, capped at B+. Bayern are <strong>without Michael Olise</strong> (sent off vs Viking). The higher-EV, higher-variance of the two soccer officials.</p>
-        <div class="sources"><span>✓ 10k sim</span><span>✓ WSB preview verdict</span><span>MD2-only inputs</span></div>
-      </article>
-    </div>
-
-    <div class="note" style="margin-top:12px"><b>Best per sport:</b> NBA — Hornets ML is the day's lead NBA play backed by two independent models against the market price (Pelicans ML is the second NBA official). Soccer (UCL) — Como ML is RotoWire-agreed; Arsenal ML is the higher-EV, higher-variance second official. <b>NHL:</b> none official. <b>NCAAF:</b> none official. <b>WNBA:</b> none official. <b>Tennis:</b> none official.</div>
-  </section>
-
-  <!-- BOTH AGREE -->
-  <section class="panel" id="panel-agree">
-    <div class="section-head"><div><h2>Both Agree — two models, same side</h2><p>All 4 official plays are backed by more than one model: our 10,000-run sim plus a named second source. Agreement flags only — it never re-grades a play.</p></div></div>
-
-    <div class="row"><div class="row-left"><div class="avatar">CHA</div><div><h3>Charlotte Hornets ML +122 — B+</h3><p>Sim (71.0% win) + numberFire (76.48%, current rosters) — two models vs the market, same side. Card note: FanDuel's own spread (-2.5 BKN) contradicts its numberFire win prob — a documented model-vs-market collision inside one book.</p></div></div><span class="pill green">SIM + NUMBERFIRE</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">NOP</div><div><h3>New Orleans Pelicans ML +134 — B+</h3><p>Sim (57.4% win) + numberFire (67.16%, current rosters) — both models make NOP the favorite against a market price of IND -158 / NOP +134.</p></div></div><span class="pill green">SIM + NUMBERFIRE</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">COM</div><div><h3>Como ML +124 — B+ (also +130 DraftKings)</h3><p>Sim (52.8% win) + RotoWire — RotoWire's Wednesday best bet is the same play: "Como to beat a depleted Manchester United side" — independent agreement.</p></div></div><span class="pill green">SIM + ROTOWIRE</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">ARS</div><div><h3>Arsenal ML +240 — B+</h3><p>Sim (38.7% win) + WSB — WSB's UCL preview verdict is also Arsenal to win (at 3.40 in their market) — independent agreement.</p></div></div><span class="pill green">SIM + WSB</span></div>
-
-    <div class="note" style="margin-top:14px"><b>Step 6E — external cross-check:</b> No external workbook/newsletter was supplied for this week — the Oct 17 files (CFB_Week_7.xlsx, NFL_Week_6.xlsx, RedSheet_1017.pdf, PW_1017.pdf) are prior-week and stale, not used. MyGameSim: no Oct 21 scores/projections retrieved today. The agreements above are from the card's named second sources (numberFire, RotoWire, WSB).</div>
-  </section>
-
-  <!-- PROP PLAYS — officials only -->
-  <section class="panel" id="panel-all">
-    <div class="note">Prop Plays — none official today. No player prop cleared the official bar (missing verified prices/splits). Every graded prop is on the Player Props tab.</div>
-  </section>
-
-  <!-- PLAYER PROPS -->
-  <section class="panel" id="panel-props">
-    <div class="section-head"><div><h2>Player Props</h2><p>All of today's graded player props — none are official plays today (missing a verified price or split); officials would be marked OFFICIAL.</p></div></div>
-
-    <div class="grid">
-      <article class="card">
-        <div class="card-top"><div><div class="name">Giannis Antetokounmpo</div><div class="team">Miami Heat • NBA • Points • Heat debut vs MIN</div></div><span class="grade b">B • WATCH</span></div>
-        <div class="prop-line"><span class="market">Under 27.5 Points</span><span class="odds">NO PRICE CAPTURED</span></div>
-        <p class="why">PropsMadness has his last-10 average at 23.7 points, over hit in only 20% of his last 10. No price captured → no EV computable → <strong>watch, not official</strong>. Prior-season based, thin sample (n=0).</p>
-        <div class="sources"><span>PropsMadness L10</span><span>Prior-season based • thin sample (n=0)</span></div>
-      </article>
-
-      <article class="card">
-        <div class="card-top"><div><div class="name">Stephen Curry</div><div class="team">Golden State Warriors • NBA • Points + Assists</div></div><span class="grade b">B- • WATCH</span></div>
-        <div class="prop-line"><span class="market">Over 28.5 Pts + Ast</span><span class="odds">NO VERIFIED PRICE PAIR</span></div>
-        <p class="why">Tony's Picks' featured prop. Curry is a <strong>game-time decision</strong> (ankle). No verified price pair captured → <strong>watch, not official</strong>. Prior-season based, thin sample (n=0).</p>
-        <div class="sources"><span>Tony's Picks</span><span>Prior-season based • thin sample (n=0)</span></div>
-      </article>
-
-      <article class="card">
-        <div class="card-top"><div><div class="name">Harry Kane</div><div class="team">Bayern Munich • UCL • Anytime Scorer • Bayern–Arsenal highlight</div></div><span class="grade b">B- • WATCH</span></div>
-        <div class="prop-line"><span class="market">Anytime Scorer</span><span class="odds">+108 ROTOWIRE</span></div>
-        <p class="why">Watch; no verified goal-rate/opponent split this run. Listed on the card as the Bayern–Arsenal prop highlight.</p>
-        <div class="sources"><span>RotoWire</span><span>No verified split</span></div>
-      </article>
-    </div>
-  </section>
-
-  <!-- TRAPS -->
-  <section class="panel" id="panel-traps">
-    <div class="section-head"><div><h2>Traps &amp; fades</h2><p>Watch/pass items with a fade flag, a steam/line-move conflict, or a named sim-artifact warning — each with the reason in the card's own words.</p></div></div>
-
-    <div class="note" style="margin-bottom:6px"><b>Handle check:</b> No verified 90%+ handle trigger in any sport today; no verified handle/ticket splits were published in this run's sources → splits UNKNOWN, nothing flagged rather than invented. No whale bets surfaced.</div>
-
-    <h3 class="subhead">Sim-artifact warnings — all watch only</h3>
-    <p style="font-size:13px;color:var(--muted);margin:0 0 10px">Prior-season / MD2-only sim edges contradicted by a current-roster model or form.</p>
-
-    <div class="row"><div class="row-left"><div class="avatar">PHX</div><div><h3>Phoenix Suns ML +132 / +3.5 @ Portland — B</h3><p>Sim win 51.5% (EV +19.5%), BUT numberFire makes POR the projected favorite (50.9%) and the market is POR -154 — single-model (stale-input) edge only → watch.</p></div></div><span class="pill amber">WATCH</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">GSW</div><div><h3>Golden State Warriors ML +172 / +7.5 @ Lakers — B</h3><p>Sim win 44.2% (EV +20.2%), BUT numberFire LAL 67.9% and SportsMole's pick is Lakers -7.5 (GSW without Butler, Porzingis and Moody; Curry GTD) → watch; sim-vs-current-models collision printed, not hidden.</p></div></div><span class="pill amber">WATCH</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">CHI</div><div><h3>Chicago Bulls ML +290 / +9.5 @ Toronto — B-</h3><p>Sim win 35.3% (EV +37.8%), BUT numberFire TOR 83.4% and Toronto swept CHI 3-0 last season by 30/9/16 → watch only.</p></div></div><span class="pill amber">WATCH</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">DAL</div><div><h3>Dallas Mavericks ML +275 @ Houston — B-</h3><p>Sim win 31.6% (EV +18.7%), BUT numberFire HOU 85.0%, SportsMole Rockets -9, HOU won 30 of 41 at home last season → watch only.</p></div></div><span class="pill amber">WATCH</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">FEY</div><div><h3>Feyenoord ML +425 @ Betis — B-</h3><p>Sim EV +61.2% is an MD2-only artifact (both teams scored 3 / conceded 2 on MD2); Betis are 2-0 in the UCL and 3rd in La Liga, priced -187 — watch only, artifact named.</p></div></div><span class="pill amber">WATCH</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">LAC</div><div><h3>Los Angeles Clippers -4.5 vs Sacramento — B</h3><p>Sim cover 59.5% (EV +13.5% @ assumed -110) and ML -180 EV +8.4%, BUT numberFire's 85.03% win prob for LAC is irreconcilable with its own -180 price (64.3% BE) and LAC's market win total collapsed to 28.5 from 42 wins — current-roster uncertainty (Garland-era) keeps it watch. No captured spread price → no official.</p></div></div><span class="pill amber">WATCH</span></div>
-
-    <h3 class="subhead">Steam / line-move conflict — NCAAF (verified via WagerTalk)</h3>
-
-    <div class="row"><div class="row-left"><div class="avatar">NMSU</div><div><h3>NMSU @ SHSU — Total &amp; Spread</h3><p>Total 46.5 → 44.5 (2 pts down) DESPITE every tracked bet and dollar on the Over — sharp under money; CONFLICTS with our sim's over lean (sim total 47.0, over EV +3.9% @ assumed -110) — flagged, neither side official. Spread: NMSU -2.5 → -3 with all tracked spread money on Sam Houston — reverse line movement toward NMSU, conflicts with the (already-caveated) SHSU watch lean.</p></div></div><span class="pill red">CONFLICT</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">SHSU</div><div><h3>Sam Houston ML +124 — B-</h3><p>WATCH ONLY: the sim is PF/PA-only (no SRS verified) and SHSU's 19.5 ppg is FCS-inflated (59-0 vs Nicholls; 58 total points in 5 FBS losses = 11.6/gm vs FBS). WagerTalk projects NMSU 24-17, SportsJaw 20-13, BetMGM's model NMSU 52.1% — three current reads opposite the sim. Data-quality caveat caps it off official.</p></div></div><span class="pill amber">WATCH ONLY</span></div>
-
-    <h3 class="subhead">Heavy-juice / price fades — pass</h3>
-
-    <div class="row"><div class="row-left"><div class="avatar">RMA</div><div><h3>Real Madrid ML -345/-400</h3><p>Sim win only 49.3% on MD2-only inputs vs 77.5% BE; the sim fades the price, it does not create a Leipzig play.</p></div></div><span class="pill red">PASS</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">AVL</div><div><h3>Aston Villa ML -450 vs Viking</h3><p>Sim 67.3% vs 81.8% BE, EV -17.7%; heavy juice on a side whose MD2 6-0 inflates the sim.</p></div></div><span class="pill red">PASS</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">BUF</div><div><h3>Buffalo ML -185 vs Philadelphia — NHL</h3><p>Sim 62.6% vs 64.9% BE, EV -3.6%.</p></div></div><span class="pill red">PASS</span></div>
-    <div class="row"><div class="row-left"><div class="avatar">MIN</div><div><h3>Minnesota Timberwolves ML +102 @ Miami</h3><p>Sim 49.0% vs 49.5% BE → no edge; numberFire MIA 57.4%.</p></div></div><span class="pill red">PASS</span></div>
-
-    <div class="note" style="margin-top:14px"><b>Watch totals:</b> NBA totals the prior-season sim likes are all watch — single-model, totals priced off current rosters (MIN@MIA UNDER 243.5; IND@NOP UNDER 239.5; CHA@BKN OVER 219.5; CHI@TOR UNDER 236.5; PHX@POR UNDER 231.5; GSW@LAL UNDER 233.5) — no prices captured → none official.</div>
-  </section>
-
-  <div class="footer">Prop Board • Wednesday, October 21, 2026 — built from the Oct 21 card (~1:00 AM ET). Lines are pre-game snapshots from the card and move — recheck at your book before anything matters. Sims: 10,000 runs. Officials are flat 1 unit.</div>
+</style></head>
+<body><div class="wrap">
+<nav class="tabs" aria-label="Prop board tabs"><div class="tabs-inner" role="tablist"><button class="tab-btn active" data-tab="top" role="tab">⭐ Top Picks <small>6</small></button>
+<button class="tab-btn" data-tab="agree" role="tab">✓ Both Agree <small>3</small></button>
+<button class="tab-btn" data-tab="all" role="tab">🎯 Prop Plays <small>0</small></button>
+<button class="tab-btn" data-tab="props" role="tab">Player Props <small>0</small></button>
+<button class="tab-btn" data-tab="traps" role="tab">⚠ Traps & Fades <small>7</small></button>
+<button class="tab-btn" data-tab="nfl" role="tab">NFL <small>1</small></button>
+<button class="tab-btn" data-tab="nba" role="tab">NBA <small>1</small></button>
+<button class="tab-btn" data-tab="ncaaf" role="tab">NCAAF <small>1</small></button>
+<button class="tab-btn" data-tab="nhl" role="tab">NHL <small>2</small></button>
+<button class="tab-btn" data-tab="soccer" role="tab">Soccer <small>1</small></button>
+<button class="tab-btn" data-tab="tennis" role="tab">Tennis <small>0</small></button>
+<button class="tab-btn" data-tab="mlb" role="tab">MLB <small>0</small></button>
+<button class="tab-btn" data-tab="wnba" role="tab">WNBA <small>0</small></button>
+<button class="tab-btn" data-tab="cbb" role="tab">CBB <small>0</small></button>
+<button class="tab-btn" data-tab="cfl" role="tab">CFL <small>0</small></button>
+<button class="tab-btn" data-tab="boxing" role="tab">Boxing/UFC <small>0</small></button>
+</div></nav>
+<div class="date-banner"><div class="d">Thursday, October 22, 2026</div><div class="s">Today's board — from the card built ~1:00 AM ET. Lines are pre-game snapshots from the card and move; recheck before anything matters.</div></div>
+<div class="top"><div><div class="eyebrow">Thursday • Oct 22, 2026 — Today's Card</div><h1>Six officials.<br>All B+, all positive EV.</h1><p class="sub">6 official plays across NFL, NBA, NCAAF, NHL and UEL soccer — three totals/MLs backed by a second model, two NHL moneylines, and Sunderland in the Europa League. No official player props today: no prop carried a verified average + opponent split + price.</p></div><div class="meta-box"><b>How to read this board</b><span><span class="mono">OFFICIAL</span> = B+ or better with positive EV at flat 1 unit</span><span><span class="mono">WATCH</span> = graded lean that failed a check and stays off the official card</span><span><span class="mono">SIM</span> = 10,000-run simulation; EV vs break-even</span><span style="margin-top:8px"><b style="font-size:12px">Sources:</b> 10k sim • numberFire • FanDuel Research • DataSkrive/Bleacher Nation • FanDuel / DraftKings / BetRivers snapshots</span></div></div>
+<section class="panel active" id="panel-top"><div class="stats"><div class="stat"><strong>6</strong><span>Official plays — all B+, flat 1 unit, positive EV</span></div><div class="stat"><strong>+30.1%</strong><span>Best EV — Islanders ML sim edge</span></div><div class="stat"><strong>5</strong><span>Sports with officials — NFL, NBA, NCAAF, NHL (2), Soccer</span></div><div class="stat"><strong>0</strong><span>Official player props — none verified today</span></div></div><div class="grid"><article class="card"><div class="card-top"><div><div class="name">Patriots @ Bears UNDER 50.5</div><div class="team">NFL • New England @ Chicago • 8:15 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Under 50.5</span><span class="odds">-110 CONSENSUS — SHOP -105 DK</span></div><div class="numbers"><div class="num"><label>Sim avg</label><b>NE 21.5 – CHI 22.4</b></div><div class="num"><label>Sim total</label><b>43.8</b></div><div class="num"><label>Sim under</label><b>64.3%</b></div><div class="num"><label>EV</label><b>+22.7%</b></div></div><p class="why">Both defenses top-6 in points allowed (NE 18.8/gm, CHI 19.8/gm). FanDuel Research independently picks Under 50.5. <strong>Conflict:</strong> BettorsInsider best bet is Over 50.5; total steamed 47.5 → 50.5 against the under.</p><div class="sources"><span>✓ 10k sim</span><span>✓ FanDuel Research</span></div></article><article class="card"><div class="card-top"><div><div class="name">Cleveland Cavaliers ML</div><div class="team">NBA • @ Philadelphia 76ers • 7:00 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Cavaliers ML</span><span class="odds">+130 BETRIVERS/DK/FANATICS</span></div><div class="numbers"><div class="num"><label>Sim avg</label><b>CLE 117.4 – PHI 115.7</b></div><div class="num"><label>Sim win</label><b>54.5%</b></div><div class="num"><label>Break-even</label><b>43.5%</b></div><div class="num"><label>EV</label><b>+25.4%</b></div></div><p class="why">numberFire independently makes CLE favorite at <strong>51.86%</strong> — two models vs market PHI -138/-154. ML over +3.5 spread (EV +18.9%). Prior-season based, thin n=0.</p><div class="sources"><span>✓ 10k sim</span><span>✓ numberFire 51.86%</span><span>Thin sample n=0</span></div></article><article class="card"><div class="card-top"><div><div class="name">Liberty @ Kennesaw St UNDER 50.5</div><div class="team">NCAAF • Liberty @ Kennesaw State • 7:00 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Under 50.5</span><span class="odds">-112 PICKDAWGZ — SHOP 50.5</span></div><div class="numbers"><div class="num"><label>Sim avg</label><b>LIB 25.3 – KENN 21.2</b></div><div class="num"><label>Sim total</label><b>46.4</b></div><div class="num"><label>Sim under</label><b>59.6%</b></div><div class="num"><label>EV</label><b>+13.8%</b></div></div><p class="why">DataSkrive/Bleacher Nation independently picks under 50.5. Kennesaw games 1-5 to the over this season.</p><div class="sources"><span>✓ 10k sim</span><span>✓ DataSkrive / Bleacher Nation</span></div></article><article class="card"><div class="card-top"><div><div class="name">Ottawa Senators ML</div><div class="team">NHL • vs San Jose Sharks • 7:00 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Senators ML</span><span class="odds">-118 FANDUEL</span></div><div class="numbers"><div class="num"><label>Sim avg</label><b>SJ 2.7 – OTT 3.4</b></div><div class="num"><label>Sim win</label><b>62.4%</b></div><div class="num"><label>Break-even</label><b>54.1%</b></div><div class="num"><label>EV</label><b>+15.3%</b></div></div><p class="why">GD/gm OTT +0.50 vs SJ -0.80. Thin samples n=10/10 capped B+.</p><div class="sources"><span>✓ 10k sim</span><span>Thin n=10/10</span></div></article><article class="card"><div class="card-top"><div><div class="name">New York Islanders ML</div><div class="team">NHL • vs Los Angeles Kings • 7:30 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Islanders ML</span><span class="odds">-108 NOVIG</span></div><div class="numbers"><div class="num"><label>Sim avg</label><b>LAK 2.6 – NYI 3.6</b></div><div class="num"><label>Sim win</label><b>67.5%</b></div><div class="num"><label>Break-even</label><b>51.9%</b></div><div class="num"><label>EV</label><b>+30.1%</b></div></div><p class="why">GD/gm NYI +0.78 vs LAK -1.43 (league-low 17 goals, 1-4-2). Thin n=9/7 capped B+.</p><div class="sources"><span>✓ 10k sim</span><span>Thin n=9/7</span></div></article><article class="card"><div class="card-top"><div><div class="name">Sunderland ML</div><div class="team">Soccer • UEL • @ Lech Poznań • 12:45 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Sunderland ML</span><span class="odds">-143 ACEODDS</span></div><div class="numbers"><div class="num"><label>Sim avg</label><b>SUN 2.10 – LEC 0.90</b></div><div class="num"><label>Sim win</label><b>65.2%</b></div><div class="num"><label>Break-even</label><b>58.8%</b></div><div class="num"><label>EV</label><b>+10.8%</b></div></div><p class="why">Form verified: Lech lost MD1 0-4 and MD2 0-4 (0 GF / 8 GA); Sunderland won MD1 1-0 and MD2 2-1. Input flag: MD1+MD2 only, capped B+.</p><div class="sources"><span>✓ 10k sim</span><span>MD1+MD2 only</span></div></article></div><div class="note" style="margin-top:12px"><b>Best per sport:</b> NFL U50.5 (B+); NBA Cavaliers ML +130 (B+); NCAAF Liberty U50.5 (B+); NHL Islanders ML -108 (B+); Soccer Sunderland ML -143 (B+); Tennis none; MLB/WNBA/CBB/CFL/Boxing/UFC no games/cards.</div></section>
+<section class="panel" id="panel-agree"><div class="section-head"><div><h2>Both Agree — sim + named second source</h2><p>3 of 6 officials. Agreement flags only — never re-grades. Step 6E: no external workbook/newsletter supplied this week; Oct 17 files are prior-week stale.</p></div></div><div class="row"><div class="row-left"><div class="avatar">NE</div><div><h3>Patriots @ Bears UNDER 50.5 -110 — B+</h3><p>Sim (under 64.3%) + FanDuel Research independently picks Under 50.5.</p></div></div><span class="pill green">SIM + FANDUEL RESEARCH</span></div><div class="row"><div class="row-left"><div class="avatar">CLE</div><div><h3>Cleveland Cavaliers ML +130 — B+</h3><p>Sim (54.5%) + numberFire (51.86%, current rosters) — two models vs the market, same side.</p></div></div><span class="pill green">SIM + NUMBERFIRE</span></div><div class="row"><div class="row-left"><div class="avatar">LIB</div><div><h3>Liberty @ Kennesaw State UNDER 50.5 -112 — B+</h3><p>Sim (under 59.6%) + DataSkrive/Bleacher Nation independently picks under 50.5.</p></div></div><span class="pill green">SIM + DATASKRIVE/BN</span></div></section>
+<section class="panel" id="panel-all"><div class="note">Prop Plays — none official today. No player prop with a verified average + positional opponent split + listed price triple was captured in this run's text sources for any game — none forced.</div></section>
+<section class="panel" id="panel-props"><div class="section-head"><div><h2>Player Props</h2><p>No graded player props on today's card — same reason as Prop Plays tab.</p></div></div><div class="note">Closest ungraded watch mentions only (NOT graded): Drake Maye (New England Patriots) OVER 1.5 pass TDs -115 — unverified split, no midpoint computed. George Pettaway (James Madison) — no listed line captured. Jaylin Carter (Memphis) — no listed line captured.</div></section>
+<section class="panel" id="panel-traps"><div class="section-head"><div><h2>Traps &amp; Fades</h2><p>No verified 90%+ handle trigger today; splits UNKNOWN, nothing invented. No whale bets surfaced.</p></div></div><div class="row"><div class="row-left"><div class="avatar">ART</div><div><h3>App State +10.5 / Kennesaw +10 / ECU +10.5 — all B- WATCH</h3><p>PF/PA-only sim cover EVs +17-19% and ML EVs +67-69% are the midpoint-compression artifact; VSIN, RotoBaller and CollegeFootballGamePicker all back the favorites. All watch, none official.</p></div></div><span class="pill red">ARTIFACT</span></div><div class="row"><div class="row-left"><div class="avatar">DEN</div><div><h3>Denver Nuggets ML +260 / +8.5 — B WATCH</h3><p>Sim win 38.7% BUT numberFire makes OKC 70.56% favorite and SportsMole picks OKC -8.5 — prior-season artifact candidate. Collision printed.</p></div></div><span class="pill amber">COLLISION</span></div><div class="row"><div class="row-left"><div class="avatar">UEL</div><div><h3>UEL artifact dogs — Lyon +240, Jagiellonia +210, Sturm Graz +290, Crystal Palace +210, Celta +150, AC Milan +260 — WATCH</h3><p>2-game inputs, shrinkage compression named. Every other UEL favorite prices negative-EV → PASS.</p></div></div><span class="pill red">ARTIFACT</span></div><div class="row"><div class="row-left"><div class="avatar">NHL</div><div><h3>NHL artifact-risk leans — Seattle +150, Vancouver +156, Anaheim +178, Edmonton +108 — WATCH</h3><p>Single-model thin-sample leans; Vancouver 2-8-1 with league-worst 51 GA — artifact risk named.</p></div></div><span class="pill amber">WATCH</span></div><div class="row"><div class="row-left"><div class="avatar">NE</div><div><h3>NE@CHI steam conflict — total 47.5 → 50.5</h3><p>Money toward Chicago and the over; the 3-point rise AGAINST our under official is flagged, not hidden. BettorsInsider best bet is Over 50.5.</p></div></div><span class="pill red">CONFLICT</span></div><div class="row"><div class="row-left"><div class="avatar">JMU</div><div><h3>JMU@APP sharp-under footprint</h3><p>Total dropped ~1 pt despite heavy public over support (WagerTalk) — aligns with watch under 56.5 (B-).</p></div></div><span class="pill amber">WATCH</span></div><div class="row"><div class="row-left"><div class="avatar">FAV</div><div><h3>Favorites symmetry — JMU -10.5 / Liberty -10 / Memphis -10.5 PASS</h3><p>Sim cover EVs -26 to -28%; no side taken against the sim either (artifact symmetry).</p></div></div><span class="pill red">PASS</span></div></section>
+<section class="panel" id="panel-nfl"><div class="section-head"><div><h2>NFL</h2><p>1 game — TNF Patriots @ Bears.</p></div></div><div class="grid"><article class="card"><div class="card-top"><div><div class="name">Patriots @ Bears UNDER 50.5</div><div class="team">NFL • 8:15 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Under 50.5</span><span class="odds">-110</span></div><div class="numbers"><div class="num"><label>Sim total</label><b>43.8</b></div><div class="num"><label>EV</label><b>+22.7%</b></div></div><p class="why">Official total. Watch: Patriots ML +130 (B) — sim 48.2% EV +10.9%, SportsJaw/VSIN project Bears win. Pass: Bears ML -155, spreads.</p><div class="sources"><span>OFFICIAL</span></div></article></div></section><section class="panel" id="panel-nba"><div class="section-head"><div><h2>NBA</h2><p>2 games. Prior-season based, thin sample, capped B+.</p></div></div><div class="grid"><article class="card"><div class="card-top"><div><div class="name">Cleveland Cavaliers ML</div><div class="team">NBA • @ Philadelphia • 7:00 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Cavaliers ML</span><span class="odds">+130</span></div><div class="numbers"><div class="num"><label>Sim win</label><b>54.5%</b></div><div class="num"><label>EV</label><b>+25.4%</b></div></div><p class="why">Official. Watch: Denver ML +260/+8.5 (collision), DEN@OKC Under 235.5 watch. Pass: PHI ML, OKC ML/-8.5.</p><div class="sources"><span>OFFICIAL</span></div></article></div></section><section class="panel" id="panel-ncaaf"><div class="section-head"><div><h2>NCAAF</h2><p>3 games.</p></div></div><div class="grid"><article class="card"><div class="card-top"><div><div class="name">Liberty @ Kennesaw St UNDER 50.5</div><div class="team">NCAAF • 7:00 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Under 50.5</span><span class="odds">-112</span></div><div class="numbers"><div class="num"><label>Sim total</label><b>46.4</b></div><div class="num"><label>EV</label><b>+13.8%</b></div></div><p class="why">Official total. Watch: 3 artifact dogs, ECU@MEM Under 54.5 (B), JMU@APP Under 56.5 (B-). Pass: all favorites.</p><div class="sources"><span>OFFICIAL</span></div></article></div></section><section class="panel" id="panel-nhl"><div class="section-head"><div><h2>NHL</h2><p>12 games — 2 officials.</p></div></div><div class="grid"><article class="card"><div class="card-top"><div><div class="name">Ottawa Senators ML</div><div class="team">NHL • vs San Jose • 7:00 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Senators ML</span><span class="odds">-118</span></div><div class="numbers"><div class="num"><label>Sim win</label><b>62.4%</b></div><div class="num"><label>EV</label><b>+15.3%</b></div></div><p class="why">Official.</p><div class="sources"><span>OFFICIAL</span></div></article><article class="card"><div class="card-top"><div><div class="name">New York Islanders ML</div><div class="team">NHL • vs LA Kings • 7:30 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Islanders ML</span><span class="odds">-108</span></div><div class="numbers"><div class="num"><label>Sim win</label><b>67.5%</b></div><div class="num"><label>EV</label><b>+30.1%</b></div></div><p class="why">Official. Watch leans: SEA +150, VAN +156, ANA +178, EDM +108, BOS -145, WPG +178, FLA +108, TOR +104, VGK -117. Pass: DAL, MIN, DET, UTA, NJD.</p><div class="sources"><span>OFFICIAL</span></div></article></div></section><section class="panel" id="panel-soccer"><div class="section-head"><div><h2>Soccer — UEL MD3</h2><p>18 games — 1 official.</p></div></div><div class="grid"><article class="card"><div class="card-top"><div><div class="name">Sunderland ML</div><div class="team">UEL • @ Lech Poznań • 12:45 PM ET</div></div><span class="grade b">B+ • OFFICIAL</span></div><div class="prop-line"><span class="market">Sunderland ML</span><span class="odds">-143</span></div><div class="numbers"><div class="num"><label>Sim win</label><b>65.2%</b></div><div class="num"><label>EV</label><b>+10.8%</b></div></div><p class="why">Official. Watch artifact dogs listed on Traps tab. All other favorites PASS.</p><div class="sources"><span>OFFICIAL</span></div></article></div></section><section class="panel" id="panel-tennis"><div class="note">Tennis: Ningbo R16, Osaka R16, ATP Almaty/Brussels/Lyon — no official play (no aces/double-faults props in text sources; SofaScore live-browser read NOT completed this run — named gap).</div></section><section class="panel" id="panel-mlb"><div class="note">MLB: No game today — World Series G1 is Friday Oct 23, TB @ MIL.</div></section><section class="panel" id="panel-wnba"><div class="note">WNBA: No Thursday game verified in this run's sources (Finals G3 was Wed in Atlanta) → no play.</div></section><section class="panel" id="panel-cbb"><div class="note">CBB: No games (opens Nov 2).</div></section><section class="panel" id="panel-cfl"><div class="note">CFL: No Thursday cards found in this run's sources.</div></section><section class="panel" id="panel-boxing"><div class="note">Boxing/UFC: No Thursday cards found in this run's sources.</div></section>
+<div class="footer">Prop Board • Thursday, October 22, 2026 — built from the Oct 22 card (~1:00 AM ET). Lines are pre-game snapshots and move — recheck at your book. Sims: 10,000 runs. Officials are flat 1 unit. Research only.</div>
 </div>
-
-<!-- TABS — pinned to the bottom too, so switching is always one tap -->
-<nav class="bottom-tabs" aria-label="Prop board tabs (bottom)">
-  <button class="tab-btn active" data-tab="top">⭐ Top Picks</button>
-  <button class="tab-btn" data-tab="agree">✓ Both Agree</button>
-  <button class="tab-btn" data-tab="all">🎯 Prop Plays</button>
-  <button class="tab-btn" data-tab="props">Player Props</button>
-  <button class="tab-btn" data-tab="traps">⚠ Traps &amp; Fades</button>
+<nav class="bottom-tabs" aria-label="Prop board tabs (bottom)"><button class="tab-btn" data-tab="top" role="tab">⭐ Top Picks</button>
+<button class="tab-btn" data-tab="agree" role="tab">✓ Both Agree</button>
+<button class="tab-btn" data-tab="all" role="tab">🎯 Prop Plays</button>
+<button class="tab-btn" data-tab="props" role="tab">Player Props</button>
+<button class="tab-btn" data-tab="traps" role="tab">⚠ Traps & Fades</button>
+<button class="tab-btn" data-tab="nfl" role="tab">NFL</button>
+<button class="tab-btn" data-tab="nba" role="tab">NBA</button>
+<button class="tab-btn" data-tab="ncaaf" role="tab">NCAAF</button>
+<button class="tab-btn" data-tab="nhl" role="tab">NHL</button>
+<button class="tab-btn" data-tab="soccer" role="tab">Soccer</button>
+<button class="tab-btn" data-tab="tennis" role="tab">Tennis</button>
+<button class="tab-btn" data-tab="mlb" role="tab">MLB</button>
+<button class="tab-btn" data-tab="wnba" role="tab">WNBA</button>
+<button class="tab-btn" data-tab="cbb" role="tab">CBB</button>
+<button class="tab-btn" data-tab="cfl" role="tab">CFL</button>
+<button class="tab-btn" data-tab="boxing" role="tab">Boxing/UFC</button>
 </nav>
-
-<script>
-(function(){
-  var tabs=document.querySelectorAll('.tab-btn');
-  var panels={top:document.getElementById('panel-top'),agree:document.getElementById('panel-agree'),all:document.getElementById('panel-all'),props:document.getElementById('panel-props'),traps:document.getElementById('panel-traps')};
-  tabs.forEach(function(btn){
-    btn.addEventListener('click',function(){
-      var key=btn.getAttribute('data-tab');
-      tabs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-tab')===key)});
-      Object.keys(panels).forEach(function(k){panels[k].classList.remove('active')});
-      if(panels[key]) panels[key].classList.add('active');
-      window.scrollTo({top:0,behavior:'smooth'});
-    });
-  });
-})();
-</script>
-</body>
-</html>
+<script>(function(){var tabs=document.querySelectorAll('.tab-btn');var panels={};document.querySelectorAll('.panel').forEach(function(p){panels[p.id.replace('panel-','')]=p});tabs.forEach(function(btn){btn.addEventListener('click',function(){var key=btn.getAttribute('data-tab');tabs.forEach(function(b){b.classList.toggle('active',b.getAttribute('data-tab')===key)});Object.keys(panels).forEach(function(k){panels[k].classList.remove('active')});if(panels[key])panels[key].classList.add('active');window.scrollTo({top:0,behavior:'smooth'});});});})();</script>
+</body></html>
