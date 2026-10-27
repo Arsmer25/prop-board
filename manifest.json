@@ -1,7 +1,7 @@
 {
-  "name": "Prop Board",
-  "short_name": "Prop Board",
-  "description": "Aj's daily prop board — officials, props, defense boards and the model tracker.",
+  "name": "Load and Loaded",
+  "short_name": "Load and Loaded",
+  "description": "Aj's daily board \u2014 officials, props, defense boards and the model tracker.",
   "start_url": ".",
   "scope": ".",
   "display": "standalone",
@@ -9,8 +9,23 @@
   "background_color": "#0d1117",
   "theme_color": "#0d1117",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }
